@@ -32,8 +32,6 @@ public final class Main {
         context.addServlet(servlet, "/*");
 
         ServerContainer wscontainer = WebSocketServerContainerInitializer.configureContext(context);
-
-        // Add WebSocket endpoint to javax.websocket layer
         wscontainer.addEndpoint(RealTimeStockTicker.class);
 
         Broadcaster broadcaster = new Broadcaster();
