@@ -1,0 +1,5 @@
+{
+  "runtime":{"majorVersion":"8"},
+  "command":"java -jar accs-jetty-embedded.jar",
+  "notes":"Sample embedded Jetty app on ACCS"
+}
