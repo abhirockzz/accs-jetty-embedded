@@ -5,11 +5,6 @@ import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
 
-/**
- * A simple utility class which leverages the JSON Processing (JSON-P) API to filter the JSON 
- * payload obtained from the Google Finance REST endpoint and returns useful data in a custom format
- * 
- */
 public class StockDataParser {
     
     public static String parse(String data){

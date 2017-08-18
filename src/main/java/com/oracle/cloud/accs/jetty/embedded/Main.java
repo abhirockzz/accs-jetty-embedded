@@ -2,23 +2,18 @@ package com.oracle.cloud.accs.jetty.embedded;
 
 import java.net.URI;
 import java.util.Optional;
-
 import javax.websocket.server.ServerContainer;
-
 import javax.ws.rs.core.UriBuilder;
-
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletContainer;
 
 public final class Main {
 
     public static void main(String[] args) throws Exception {
-        //String hostname = "0.0.0.0";
         String hostname = Optional.ofNullable(System.getenv("HOST")).orElse("localhost");
         String port = Optional.ofNullable(System.getenv("PORT")).orElse("8080");
 
@@ -60,6 +55,5 @@ public final class Main {
         System.out.println("broadcast started..");
 
         server.join();
-
     }
 }
