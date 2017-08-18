@@ -1,6 +1,6 @@
 # Build and deploy a Jetty based Java application using Oracle Cloud
 
-Check [the blog](tbd) for details
+Check [the blog](https://medium.com/oracledevs/build-deploy-a-jetty-based-app-using-oracle-application-container-cloud-oracle-developer-cloud-c756f7a04a3b) for details
 
 ## Build
 
