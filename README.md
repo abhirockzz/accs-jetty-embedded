@@ -16,8 +16,6 @@ Check [the blog](https://medium.com/oracledevs/build-deploy-a-jetty-based-app-us
 
 ## Run locally
 
-- `git clone https://github.com/abhirockzz/accs-jetty-embedded.git`
-- `mvn clean install`
 - `java -jar target/accs-jetty-embedded.jar`
 
 ## Test
